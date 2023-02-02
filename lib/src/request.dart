@@ -15,10 +15,10 @@ class Request {
   final dynamic data;
 
   /// Query parameters to encompass additional parameters to the query.
-  final Map<String, dynamic>? queryParameters;
+  final dynamic queryParameters;
 
   /// Headers to encompass content-types.
-  final Map<String, dynamic>? headers;
+  final dynamic headers;
 
   const Request({
     this.route,

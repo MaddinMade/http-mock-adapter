@@ -59,7 +59,7 @@ mixin RequestHandling on Recording {
           request.method ?? RequestMethods.forName(name: dio.options.method),
       data: requestData,
       queryParameters: request.queryParameters ?? dio.options.queryParameters,
-      headers: {...?request.headers},
+      headers: request.headers,
     ));
 
     requestHandlerCallback(matcher);
